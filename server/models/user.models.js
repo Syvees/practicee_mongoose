@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
-const UserSchema = new mongoose.Schema({
+// NEW DB, OBJECT CONSTRUCTOR
+const UserSchema = new mongoose.Schema({ 
     name: {
         type: String
     },
@@ -9,6 +10,7 @@ const UserSchema = new mongoose.Schema({
     }
 });
 
-const User = mongoose.model('User', UserSchema);
+//MODEL IS CREATED USING USER COLLECTION & USERSCHEMA SCHEMA
+const User = mongoose.model('User', UserSchema); 
 
 module.exports = User;
